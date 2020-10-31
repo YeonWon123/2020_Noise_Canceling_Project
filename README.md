@@ -1,5 +1,6 @@
 # 2020_Noise_Canceling_Project
- 2020 NS2020팀 졸업작품 - Noise Canceling(Reduction) 프로젝트입니다.
+ 2020 NS2020팀 졸업작품 - Noise Canceling(Reduction) 프로젝트입니다. (남윤원, 이명신 진행)
+
  다음의 오픈소스를 참고하여 제작하였습니다.
 
 * CNN 기반의 Noise Reduction & Canceling OpenSource Code
