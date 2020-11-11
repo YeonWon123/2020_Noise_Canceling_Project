@@ -7,7 +7,7 @@
 
 
 ## 데이터 정의 ##
-* Noise Data (총 8가지의 소리 파일)
+1. Noise Data (총 8가지의 소리 파일)
  - Pink Noise
  - White Noise
  - Brown Noise
@@ -17,12 +17,12 @@
  - Jackhammer (망치 소리)
  - Air Conditional
 
-* Original Data (소음이 없는 깔끔한 소리)
+2. Original Data (소음이 없는 깔끔한 소리)
  - MIR-1K DataSet (중국어로 노래부르는 소리) - 1000개
  - Korean Single Speaker Speech Dataset (한국어 음성 파일) - 12854개
  - 실생활에서 핸드폰/노트북 마이크 등으로 녹음한 소리 - 50개
 
-* Original Data와 Noise data를 섞어서 NoiseAdded 데이터를 만들어 학습 진행
+3. Original Data와 Noise data를 섞어서 NoiseAdded 데이터를 만들어 학습 진행
 (처음부터 Noise가 섞인 데이터를 수집하여 학습에 사용한다면, 모델을 훈련함에 있어 Noise의 Label 또는 Feature를 특정해 내기가 어려워 결과가 잘 나오지 않는 상황이 반복되었습니다.)
 
 ## 레퍼런스 ##
