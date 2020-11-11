@@ -1,6 +1,32 @@
 # 2020_Noise_Canceling_Project
  2020 NS2020팀 졸업작품 - Noise Canceling(Reduction) 프로젝트입니다. (남윤원, 이명신 진행)
 
+## 목적 ##
+* 딥러닝을 기반으로 한 Noise Canceling을 구현하며, 합성곱 신경망(CNN), 순환 신경망(RNN) 기법을 사용하고 두 방법을 비교하여 봅니다.
+* 기존에 연구된 논문들과 오픈소스를 기반으로 하여 실생활에서 발생할 수 있는 여러 소음에 잘 대처할 수 있게 모델을 설계/구현하고 소프트웨어를 완성합니다.
+
+
+## 데이터 정의 ##
+* Noise Data (총 8가지의 소리 파일)
+ - Pink Noise
+ - White Noise
+ - Brown Noise
+ - Children Playing
+ - Drill
+ - Engine
+ - Jackhammer (망치 소리)
+ - Air Conditional
+
+* Original Data (소음이 없는 깔끔한 소리)
+ - MIR-1K DataSet (중국어로 노래부르는 소리) - 1000개
+ - Korean Single Speaker Speech Dataset (한국어 음성 파일) - 12854개
+ - 실생활에서 핸드폰/노트북 마이크 등으로 녹음한 소리 - 50개
+
+* Original Data와 Noise data를 섞어서 NoiseAdded 데이터를 만들어 학습 진행
+(처음부터 Noise가 섞인 데이터를 수집하여 학습에 사용한다면, 모델을 훈련함에 있어 Noise의 Label 또는 Feature를 특정해 내기가 어려워 결과가 잘 나오지 않는 상황이 반복되었습니다.)
+
+## 레퍼런스 ##
+
  다음의 오픈소스를 참고하여 제작하였습니다.
 
 * CNN 기반의 Noise Reduction & Canceling OpenSource Code
